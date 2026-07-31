@@ -31,13 +31,13 @@ Commands:
   l                 Focus on the previous window. If the current window is already at the edge, focus on the previous workspace.
 ```
 
-## Example in hyprland.conf
+## Example in hyprland.lua
 
-```conf
-bind = SUPER, H, exec, hyprnavi l
-bind = SUPER, L, exec, hyprnavi r
-bind = SUPER SHIFT, H, exec, hyprnavi l --swap
-bind = SUPER SHIFT, L, exec, hyprnavi r --swap
+```lua
+hl.bind("SUPER + H", hl.dsp.exec_cmd("hyprnavi l"))
+hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprnavi r"))
+hl.bind("SUPER + SHIFT + H", hl.dsp.exec_cmd("hyprnavi l --swap"))
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprnavi r --swap"))
 ```
 
 ## LICENSE
