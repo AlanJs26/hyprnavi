@@ -6,7 +6,8 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.82"
 argh = "0.1.12"
-hyprland = { git = "https://github.com/hyprland-community/hyprland-rs", rev = "116305ab39c69b72e9f19162c4264dbec86be5dd" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 [profile.release]
 opt-level = "s"
